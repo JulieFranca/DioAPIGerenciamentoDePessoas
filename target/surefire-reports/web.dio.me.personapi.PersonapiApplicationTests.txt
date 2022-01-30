@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: web.dio.me.personapi.PersonapiApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.651 s <<< FAILURE! - in web.dio.me.personapi.PersonapiApplicationTests
+contextLoads  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personRepository' defined in web.dio.me.personapi.repository.PersonRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class web.dio.me.personapi.entity.Person
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class web.dio.me.personapi.entity.Person
+
